@@ -18,8 +18,11 @@
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 
   /* Hero bar animation */
-  #heroBar { transition: right 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
+  #heroBar { right: 100%; transition: right 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
   #heroBar.filled { right: 28%; }
+
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 72px; }
 
   /* Ring animation */
   #ringCircle { transition: stroke-dashoffset 1.1s cubic-bezier(0.22, 1, 0.36, 1); }
@@ -47,7 +50,7 @@
       <a href="#report" style="text-decoration: none;">Sample report</a>
       <a href="#faq" style="text-decoration: none;">FAQ</a>
     </nav>
-    <a href="#owners" style="background: #1f2a3c; color: #faf7f2; text-decoration: none; font-weight: 500; font-size: 15px; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex: none;">Get a quote</a>
+    <a href="mailto:hello@practiceculturescore.com?subject=Quote%20Request" style="background: #1f2a3c; color: #faf7f2; text-decoration: none; font-weight: 500; font-size: 15px; padding: 10px 18px; border-radius: 999px; white-space: nowrap; flex: none;">Get a quote</a>
   </div>
 </header>
 
@@ -57,7 +60,7 @@
       <h1 style="margin: 0; font-size: clamp(38px, 5.4vw, 66px); font-weight: 600; letter-spacing: -0.04em; line-height: 1.02; text-wrap: balance;">Find out what your team actually thinks</h1>
       <p style="margin: 0; font-size: clamp(17px, 1.4vw, 20px); line-height: 1.55; font-weight: 300; max-width: 52ch;">We survey your staff confidentially, then hand you a scored report on scheduling, workload, communication, training, and pay. Benchmarked against practices like yours.</p>
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 6px;">
-        <a href="#owners" style="background: #1f2a3c; color: #faf7f2; text-decoration: none; font-weight: 500; font-size: 17px; padding: 15px 28px; border-radius: 999px;">Survey my practice</a>
+        <a href="mailto:hello@practiceculturescore.com?subject=Survey%20Request" style="background: #1f2a3c; color: #faf7f2; text-decoration: none; font-weight: 500; font-size: 17px; padding: 15px 28px; border-radius: 999px;">Survey my practice</a>
         <a href="#faq" style="font-weight: 500; font-size: 17px; padding: 15px 4px;">Got a survey email?</a>
       </div>
     </div>
@@ -70,7 +73,7 @@
           <span style="font-size: 17px; font-weight: 300; color: #6b6660;">out of 100</span>
         </div>
         <div style="position: relative; height: 14px; background: #faf7f2; border: 1px solid rgba(31,42,60,0.2); border-radius: 999px;">
-          <div id="heroBar" style="position: absolute; top: 0; bottom: 0; left: 0; right: 100%; background: #7fae9d; border-radius: 999px;"></div>
+          <div id="heroBar" style="position: absolute; top: 0; bottom: 0; left: 0; background: #7fae9d; border-radius: 999px;"></div>
           <div style="position: absolute; top: -6px; bottom: -6px; left: 64%; width: 2px; background: #e9b393;"></div>
         </div>
         <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #6b6660;">The tick marks the average for similar practices, 64.</p>
@@ -289,7 +292,7 @@
     <div style="display: flex; flex-direction: column; gap: 10px;">
       <span style="font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #6b6660;">Contact</span>
       <a href="mailto:hello@practiceculturescore.com" style="font-size: 15px; text-decoration: none; word-break: break-word;">hello@practiceculturescore.com</a>
-      <span style="font-size: 15px; line-height: 1.6; color: #4a463f;">Practice Culture Score LLC</span>
+      <span style="font-size: 15px; line-height: 1.6; color: #4a463f;">Practice Culture Score LLC<br>68 Harrison Ave<br>Boston, Massachusetts 02111</span>
     </div>
   </div>
   <div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 40px; border-top: 1px solid rgba(31,42,60,0.14); display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center;">
