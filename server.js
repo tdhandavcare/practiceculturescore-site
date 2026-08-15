@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 // Target VentureCare backend — set VENTURECARE_URL in Railway env vars.
 // staging.venturecare.com for staging, studio.venturecare.com for production.
-const VENTURECARE_URL = process.env.VENTURECARE_URL || 'https://staging.venturecare.com';
+const VENTURECARE_URL = process.env.VENTURECARE_URL || 'https://studio.venturecare.com';
 
 const proxy = (pathRewrite) => createProxyMiddleware({
   target: VENTURECARE_URL,
